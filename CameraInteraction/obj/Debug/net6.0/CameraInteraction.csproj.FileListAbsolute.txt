@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\Grape\CameraInteraction\bin\Debug\net6.0\CameraInteraction.deps.json
+C:\Users\User\source\repos\Grape\CameraInteraction\bin\Debug\net6.0\CameraInteraction.dll
+C:\Users\User\source\repos\Grape\CameraInteraction\bin\Debug\net6.0\CameraInteraction.pdb
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.AssemblyInfo.cs
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.dll
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\refint\CameraInteraction.dll
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\CameraInteraction.pdb
+C:\Users\User\source\repos\Grape\CameraInteraction\obj\Debug\net6.0\ref\CameraInteraction.dll
