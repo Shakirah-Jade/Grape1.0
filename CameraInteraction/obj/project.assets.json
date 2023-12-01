@@ -1730,6 +1730,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AForge >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
       "Emgu.CV >= 4.8.1.5350",
       "MathNet.Numerics >= 5.0.0",
@@ -1775,6 +1776,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AForge": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
           "AForge.Video.DirectShow": {
             "target": "Package",
             "version": "[2.2.5, )"

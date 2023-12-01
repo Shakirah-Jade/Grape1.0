@@ -1,30 +1,47 @@
 ﻿using CameraInteraction;
 using Cherry;
 using System;
+using System.Collections.Generic;
 
 namespace Grape
 {
+    // Program.cs
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-           double bmr = BMRCalculator.CalculateBMR("male", 70, 175.0, 30);
+            // Instantiate the HealthCalculatorModule
+            var healthCalculator = new HealthProTechLibrary.HealthCalculatorModule();
+            var gender = new HealthProTechLibrary.Gender();
 
-          
-            /* string activityLevel = "moderately active";
-             double dailycaloricintake = BMRCalculator.CalculateDailyCaloricIntake(bmr, activityLevel); // getting the dailycaloric intake
-             Console.WriteLine($"The DailyCaloricIntake for a {gender} with age {age} and the {bmr} calories per day is: {dailycaloricintake}");
+            // Calculate BMR
+            double bmr = healthCalculator.CalculateBMR(weight: 70, height: 170, age: 25,);
+            Console.WriteLine($"Basal Metabolic Rate (BMR): {bmr} calories");
 
-             double dailyexpenditure = BMRCalculator.CalculateTotalDailyExpenditure(bmr, dailycaloricintake);
-             double depletion = BMRCalculator.CalculateGlucoseDepletion(dailyexpenditure);
-             double bodyintake = BMRCalculator.CalculateBodyIntakeRate(depletion);
-             double foodcomposition = BMRCalculator.CalculateFoodGlucoseComposition(40, bodyintake);*/
+            // Calculate TDEE
+            double tdee = healthCalculator.CalculateTDEE(ActivityLevel.ModeratelyActive);
+            Console.WriteLine($"Total Daily Energy Expenditure (TDEE): {tdee} calories");
 
+            // Calculate Daily Caloric Intake for Weight Loss
+            double dailyCaloricIntake = healthCalculator.CalculateDailyCaloricIntake(UserGoal.WeightLoss);
+            Console.WriteLine($"Daily Caloric Intake for Weight Loss: {dailyCaloricIntake} calories");
 
-            // interaction with the camera.
-            /*Interaction cameraInteraction = new Interaction();
-            cameraInteraction.StartCamera();
-*/
+            // Record Glucose Level for a User
+            string userId = "User123";
+            double glucoseLevel = 120;
+            healthCalculator.RecordGlucoseLevel(userId, glucoseLevel);
+
+            // Get Stored Glucose Levels for a User
+            List<double> storedGlucoseLevels = healthCalculator.GetStoredGlucoseLevels(userId);
+
+            // Display the stored glucose levels
+            Console.WriteLine($"Stored Glucose Levels for User {userId}:");
+            foreach (var level in storedGlucoseLevels)
+            {
+                Console.WriteLine(level);
+            }
         }
     }
+
 }
+
