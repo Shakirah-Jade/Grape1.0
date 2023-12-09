@@ -48,82 +48,9 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
-            "Emgu.CV": {
+            "CsvHelper": {
               "target": "Package",
-              "version": "[4.8.1.5350, )"
-            },
-            "MathNet.Numerics": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[8.0.0-rc.2.23479.14, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj",
-        "projectName": "CameraInteraction",
-        "projectPath": "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AForge": {
-              "target": "Package",
-              "version": "[2.2.5, )"
-            },
-            "AForge.Video.DirectShow": {
-              "target": "Package",
-              "version": "[2.2.5, )"
+              "version": "[30.0.1, )"
             },
             "Emgu.CV": {
               "target": "Package",
@@ -132,6 +59,14 @@
             "MathNet.Numerics": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.8.0.20230708, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.8.0.20230708, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -184,9 +119,6 @@
             "projectReferences": {
               "C:\\Users\\User\\source\\repos\\Cherry\\Cherry\\Cherry.csproj": {
                 "projectPath": "C:\\Users\\User\\source\\repos\\Cherry\\Cherry\\Cherry.csproj"
-              },
-              "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj"
               }
             }
           }
@@ -209,6 +141,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
             "Emgu.CV": {
               "target": "Package",
               "version": "[4.8.1.5350, )"
@@ -216,6 +152,14 @@
             "MathNet.Numerics": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.8.0.20230708, )"
+            },
+            "OpenCvSharp4.runtime.win": {
+              "target": "Package",
+              "version": "[4.8.0.20230708, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

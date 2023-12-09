@@ -35,6 +35,19 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
+      "CsvHelper/30.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Emgu.CV/4.8.1.5350": {
         "type": "package",
         "dependencies": {
@@ -104,6 +117,47 @@
           "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "OpenCvSharp4/4.8.0.20230708": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.8.0.20230708": {
+        "type": "package",
+        "build": {
+          "build/net5.0/OpenCvSharp4.runtime.win.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg480_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg480.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
           }
         }
       },
@@ -178,6 +232,15 @@
           "ref/netstandard1.5/_._": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Reflection/4.3.0": {
@@ -419,31 +482,17 @@
           }
         }
       },
-      "CameraInteraction/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AForge": "2.2.5",
-          "AForge.Video.DirectShow": "2.2.5",
-          "Emgu.CV": "4.8.1.5350",
-          "MathNet.Numerics": "5.0.0",
-          "System.Drawing.Common": "8.0.0-rc.2.23479.14"
-        },
-        "compile": {
-          "bin/placeholder/CameraInteraction.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CameraInteraction.dll": {}
-        }
-      },
       "Cherry/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AForge": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
+          "CsvHelper": "30.0.1",
           "Emgu.CV": "4.8.1.5350",
           "MathNet.Numerics": "5.0.0",
+          "OpenCvSharp4": "4.8.0.20230708",
+          "OpenCvSharp4.runtime.win": "4.8.0.20230708",
           "System.Drawing.Common": "8.0.0-rc.2.23479.14"
         },
         "compile": {
@@ -493,6 +542,30 @@
         "aforge.video.directshow.nuspec",
         "lib/AForge.Video.DirectShow.dll",
         "lib/AForge.Video.DirectShow.xml"
+      ]
+    },
+    "CsvHelper/30.0.1": {
+      "sha512": "rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "type": "package",
+      "path": "csvhelper/30.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.30.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "Emgu.CV/4.8.1.5350": {
@@ -602,6 +675,44 @@
         "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "OpenCvSharp4/4.8.0.20230708": {
+      "sha512": "MmZqvNUJuTUWQfkyXN1NOxJjx6JNfaedMOnY0dAdP5zgaKMAsxwwX5pkZl/F40JheSo3oMJhI7nhDC3kh7/ISQ==",
+      "type": "package",
+      "path": "opencvsharp4/4.8.0.20230708",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.8.0.20230708.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.8.0.20230708": {
+      "sha512": "V9zbVQXazSSoEG04nF1KEkxfY62WMQAcKAlDe7xgkNErY7WQZzEcj8dMEuHXQMaDr45jPvrJi50SQroi+w4wNw==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.8.0.20230708",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.8.0.20230708.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg480_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg480.dll"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -834,6 +945,29 @@
         "ref/xamarinwatchos10/_._",
         "system.io.4.3.0.nupkg.sha512",
         "system.io.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -1761,11 +1895,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "CameraInteraction/1.0.0": {
-      "type": "project",
-      "path": "../CameraInteraction/CameraInteraction.csproj",
-      "msbuildProject": "../CameraInteraction/CameraInteraction.csproj"
-    },
     "Cherry/1.0.0": {
       "type": "project",
       "path": "../../Cherry/Cherry/Cherry.csproj",
@@ -1776,10 +1905,12 @@
     "net6.0": [
       "AForge >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
-      "CameraInteraction >= 1.0.0",
       "Cherry >= 1.0.0",
+      "CsvHelper >= 30.0.1",
       "Emgu.CV >= 4.8.1.5350",
       "MathNet.Numerics >= 5.0.0",
+      "OpenCvSharp4 >= 4.8.0.20230708",
+      "OpenCvSharp4.runtime.win >= 4.8.0.20230708",
       "System.Drawing.Common >= 8.0.0-rc.2.23479.14"
     ]
   },
@@ -1812,9 +1943,6 @@
           "projectReferences": {
             "C:\\Users\\User\\source\\repos\\Cherry\\Cherry\\Cherry.csproj": {
               "projectPath": "C:\\Users\\User\\source\\repos\\Cherry\\Cherry\\Cherry.csproj"
-            },
-            "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\Grape\\CameraInteraction\\CameraInteraction.csproj"
             }
           }
         }
@@ -1837,6 +1965,10 @@
             "target": "Package",
             "version": "[2.2.5, )"
           },
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[30.0.1, )"
+          },
           "Emgu.CV": {
             "target": "Package",
             "version": "[4.8.1.5350, )"
@@ -1844,6 +1976,14 @@
           "MathNet.Numerics": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "OpenCvSharp4": {
+            "target": "Package",
+            "version": "[4.8.0.20230708, )"
+          },
+          "OpenCvSharp4.runtime.win": {
+            "target": "Package",
+            "version": "[4.8.0.20230708, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

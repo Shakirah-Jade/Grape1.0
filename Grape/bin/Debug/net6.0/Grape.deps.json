@@ -8,11 +8,14 @@
     ".NETCoreApp,Version=v6.0": {
       "Grape/1.0.0": {
         "dependencies": {
+          "AForge": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
-          "CameraInteraction": "1.0.0",
           "Cherry": "1.0.0",
+          "CsvHelper": "30.0.1",
           "Emgu.CV": "4.8.1.5350",
           "MathNet.Numerics": "5.0.0",
+          "OpenCvSharp4": "4.8.0.20230708",
+          "OpenCvSharp4.runtime.win": "4.8.0.20230708",
           "System.Drawing.Common": "8.0.0-rc.2.23479.14"
         },
         "runtime": {
@@ -46,6 +49,14 @@
           "lib/AForge.Video.DirectShow.dll": {
             "assemblyVersion": "2.2.5.0",
             "fileVersion": "2.2.5.0"
+          }
+        }
+      },
+      "CsvHelper/30.0.1": {
+        "runtime": {
+          "lib/net6.0/CsvHelper.dll": {
+            "assemblyVersion": "30.0.0.0",
+            "fileVersion": "30.0.1.0"
           }
         }
       },
@@ -89,6 +100,42 @@
           }
         }
       },
+      "OpenCvSharp4/4.8.0.20230708": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.8.0.20230708": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg480_64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "2023.6.0.0"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg480.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "2023.6.0.0"
+          }
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -128,6 +175,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Memory/4.5.5": {},
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1",
@@ -254,22 +302,15 @@
           "System.Runtime": "4.3.1"
         }
       },
-      "CameraInteraction/1.0.0": {
-        "dependencies": {
-          "AForge.Video.DirectShow": "2.2.5",
-          "Emgu.CV": "4.8.1.5350",
-          "MathNet.Numerics": "5.0.0",
-          "System.Drawing.Common": "8.0.0-rc.2.23479.14"
-        },
-        "runtime": {
-          "CameraInteraction.dll": {}
-        }
-      },
       "Cherry/1.0.0": {
         "dependencies": {
+          "AForge": "2.2.5",
           "AForge.Video.DirectShow": "2.2.5",
+          "CsvHelper": "30.0.1",
           "Emgu.CV": "4.8.1.5350",
           "MathNet.Numerics": "5.0.0",
+          "OpenCvSharp4": "4.8.0.20230708",
+          "OpenCvSharp4.runtime.win": "4.8.0.20230708",
           "System.Drawing.Common": "8.0.0-rc.2.23479.14"
         },
         "runtime": {
@@ -304,6 +345,13 @@
       "sha512": "sha512-pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
       "path": "aforge.video.directshow/2.2.5",
       "hashPath": "aforge.video.directshow.2.2.5.nupkg.sha512"
+    },
+    "CsvHelper/30.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rcZtgbWR+As4G3Vpgx0AMNmShGuQLFjkHAPIIflzrfkJCx8/AOd4m96ZRmiU1Wi39qS5UVjV0P8qdgqOo5Cwyg==",
+      "path": "csvhelper/30.0.1",
+      "hashPath": "csvhelper.30.0.1.nupkg.sha512"
     },
     "Emgu.CV/4.8.1.5350": {
       "type": "package",
@@ -340,6 +388,20 @@
       "path": "microsoft.win32.systemevents/8.0.0-rc.2.23479.6",
       "hashPath": "microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512"
     },
+    "OpenCvSharp4/4.8.0.20230708": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MmZqvNUJuTUWQfkyXN1NOxJjx6JNfaedMOnY0dAdP5zgaKMAsxwwX5pkZl/F40JheSo3oMJhI7nhDC3kh7/ISQ==",
+      "path": "opencvsharp4/4.8.0.20230708",
+      "hashPath": "opencvsharp4.4.8.0.20230708.nupkg.sha512"
+    },
+    "OpenCvSharp4.runtime.win/4.8.0.20230708": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V9zbVQXazSSoEG04nF1KEkxfY62WMQAcKAlDe7xgkNErY7WQZzEcj8dMEuHXQMaDr45jPvrJi50SQroi+w4wNw==",
+      "path": "opencvsharp4.runtime.win/4.8.0.20230708",
+      "hashPath": "opencvsharp4.runtime.win.4.8.0.20230708.nupkg.sha512"
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -374,6 +436,13 @@
       "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "path": "system.io/4.3.0",
       "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",
@@ -479,11 +548,6 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
-    },
-    "CameraInteraction/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Cherry/1.0.0": {
       "type": "project",
