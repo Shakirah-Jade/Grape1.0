@@ -1,0 +1,5 @@
+C:\Users\User\source\repos\Grape\TestCase\TestCase\obj\Debug\net6.0\TestCase.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Grape\TestCase\TestCase\obj\Debug\net6.0\TestCase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Grape\TestCase\TestCase\obj\Debug\net6.0\TestCase.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Grape\TestCase\TestCase\obj\Debug\net6.0\TestCase.AssemblyInfo.cs
+C:\Users\User\source\repos\Grape\TestCase\TestCase\obj\Debug\net6.0\TestCase.csproj.CoreCompileInputs.cache

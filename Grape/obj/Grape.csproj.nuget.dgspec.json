@@ -60,6 +60,14 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "OpenCvSharp4": {
               "target": "Package",
               "version": "[4.8.0.20230708, )"
@@ -152,6 +160,14 @@
             "MathNet.Numerics": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "OpenCvSharp4": {
               "target": "Package",
